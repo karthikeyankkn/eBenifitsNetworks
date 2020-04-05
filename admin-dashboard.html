@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin-dashboard</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<section class="d-flex flex-row">
+		<!-- navbar -->
+		<div class="ebn-navbar-container">
+			<div class="navbar-header">
+				<img src="assets/images/logo-L.png" width="100%" alt="company-logo" class="logo-large">
+				<img src="assets/images/logo-S.png" alt="company-logo" class="logo-small display-none">
+			</div>
+			<div class="navbar-body">
+				<ul class="parent-nav-ul">
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="home-icon nav-icon"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Dashboard</label>
+							</div>
+						</div>
+					</li>
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="report-icon nav-icon"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Report</label>
+							</div>
+							<div class="d-flex flex-column ml-auto">
+								<i class="path-right-icon nav-icon"></i>
+							</div>
+						</div>
+						<!-- child nav -->
+						<ul class="child-nav-ul">
+							<li class="child-nav-li">
+								<div class="d-flex flex-row align-items-center py-3">
+									<div class="d-flex flex-column pr-3 nav-icon-toggle">
+										<i class="sales-icon nav-icon"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<label class="m-0">child-nav</label>
+									</div>
+								</div>
+							</li>
+							<li class="child-nav-li">
+								<div class="d-flex flex-row align-items-center py-3">
+									<div class="d-flex flex-column pr-3 nav-icon-toggle">
+									<i class="sales-icon nav-icon"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<label class="m-0">child-nav</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="sales-icon nav-icon"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Sales</label>
+							</div>
+							<div class="d-flex flex-column ml-auto">
+								<i class="path-right-icon nav-icon"></i>
+							</div>
+						</div>
+						<!-- child nav -->
+						<ul class="child-nav-ul">
+							<li class="child-nav-li">
+								<div class="d-flex flex-row align-items-center py-3">
+									<div class="d-flex flex-column pr-3 nav-icon-toggle">
+										<i class="sales-icon nav-icon"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<label class="m-0">child-nav</label>
+									</div>
+								</div>
+							</li>
+							<li class="child-nav-li">
+								<div class="d-flex flex-row align-items-center py-3">
+									<div class="d-flex flex-column pr-3 nav-icon-toggle">
+										<i class="sales-icon nav-icon"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<label class="m-0">child-nav</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="seller-acc-icon nav-icon bg-size-36px"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Manage Customers</label>
+							</div>
+						</div>
+					</li>
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="products-icon nav-icon"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Manage Products</label>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="copyrights">
+					<p>Copyright @ 2020 eBenifits</p>
+				</div>
+			</div>
+		</div>
+		<!-- main container -->
+		<div class="ebn-main-container">
+			<div class="main-container-header">
+				<div class="d-flex flex-row justify-content-between h-100">
+					<div class="d-flex flex-column align-self-center ebn-hamburger">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="d-flex flex-column align-self-center">
+						<div class="d-flex flex-row">
+							<div class="d-flex flex-column align-self-center mr-4">
+								<i class="fa fa-comments ebn-light-green f-22px" aria-hidden="true"></i>
+							</div>
+							<div class="d-flex position-relative align-self-center mr-4 ebn-notification">
+								<span>3</span>
+								<i class="far fa-bell ebn-light-green f-22px"></i>
+							</div>
+							<div class="d-flex justify-content-around user-tile dropdown cursor-pointer">
+								<span class="ebn-v-border mt-2"></span>
+								<label class="ml-5" data-toggle="dropdown">Karthi Keyan</label>
+								<img class="mx-3" data-toggle="dropdown" src="assets/images/kkn-img.jpg" alt="user-img">
+								<div class="dropdown-menu">
+								    <a class="dropdown-item" href="#">Link 1</a>
+								    <a class="dropdown-item" href="#">Link 2</a>
+								    <a class="dropdown-item" href="#">Link 3</a>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-container-body p-4">
+				<div class="d-flex flex-row">
+					<div class="d-flex flex-column dahboard-tile">
+						<label>Vendors</label>
+						<b>10</b>
+					</div>
+					<div class="d-flex flex-column dahboard-tile">
+						<label>Brokers</label>
+						<b>10</b>
+					</div>
+					<div class="d-flex flex-column dahboard-tile">
+						<label>Carriers</label>
+						<b>08</b>
+					</div>
+					<div class="d-flex flex-column dahboard-tile">
+						<label>Partners</label>
+						<b>14</b>
+					</div>
+					<div class="d-flex flex-column dahboard-tile">
+						<label>Products</label>
+						<b>10</b>
+					</div>
+				</div>
+
+				<!-- Nav pills container -->
+				<div class="d-flex flex-row mt-5">
+					<div class="d-flex flex-column w-100">
+						<!-- Nav pills -->
+					  <ul class="nav nav-pills" role="tablist">
+					    <li class="nav-item pr-3">
+					      <a class="nav-link active" data-toggle="pill" href="#home">All (50)</a>
+					    </li>
+					    <li class="nav-item pr-3">
+					      <a class="nav-link" data-toggle="pill" href="#menu1">Vendors (10)</a>
+					    </li>
+					    <li class="nav-item pr-3">
+					      <a class="nav-link" data-toggle="pill" href="#menu2">Brokers (10)</a>
+					    </li>
+					    <li class="nav-item pr-3">
+					      <a class="nav-link" data-toggle="pill" href="#menu3">Carriers (08)</a>
+					    </li>
+					    <li class="nav-item pr-3">
+					      <a class="nav-link" data-toggle="pill" href="#menu4">Partners (14)</a>
+					    </li>
+					    <li class="nav-item pr-3">
+					      <a class="nav-link" data-toggle="pill" href="#menu5">Products (10)</a>
+					    </li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div id="home" class="container tab-pane active p-0 m-0"><br>
+					      <!-- dashboard-card -->
+					      	<div class="dashboard-card">
+					      		<div class="d-flex flex-row flex align-items-center">
+					      			<h4>Sales Statistics</h4>
+								  	<div class="dropdown ml-auto">
+									  	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+									    Last 6 months
+									  	</button>
+									  	<div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">Link 1</a>
+									    <a class="dropdown-item" href="#">Link 2</a>
+									    <a class="dropdown-item" href="#">Link 3</a>
+									  	</div>
+									</div>
+					      		</div>
+							  	
+								<div class="d-flex flex-row mt-2">
+									<img src="assets/images/wave-graph.png" width="100%">
+								</div>
+					      	</div>
+					    </div>
+					    <div id="menu1" class="container tab-pane fade p-0"><br>
+					      <h3>Menu 1</h3>
+					      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    </div>
+					    <div id="menu2" class="container tab-pane fade p-0"><br>
+					      <h3>Menu 2</h3>
+					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    </div>
+					     <div id="menu3" class="container tab-pane fade p-0"><br>
+					      <h3>Menu 3</h3>
+					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    </div>
+					     <div id="menu4" class="container tab-pane fade p-0"><br>
+					      <h3>Menu 4</h3>
+					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    </div>
+					     <div id="menu5" class="container tab-pane fade p-0"><br>
+					      <h3>Menu 5</h3>
+					      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <script src="https://kit.fontawesome.com/6ce3052860.js" crossorigin="anonymous"></script> -->
+	
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
