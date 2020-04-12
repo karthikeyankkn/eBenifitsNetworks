@@ -3,10 +3,32 @@ html, body{
 	background: #f9f9fa;
 	height: 100%;
 }
-ul{
+ul, label{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+button:disabled{
+    background: #e8e8e8 !important;
+    cursor: not-allowed;
+}
+.btn{
+    font-size: 14px;
+    min-width: 100px;
+    box-shadow: 0 5px 5px -6px #888;
+    border: 0;
+    padding: 5px 10px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #2ac769;
+    border-color: #2ac769;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #28a745;
+    background-color: #28a745;
+    cursor: pointer;
 }
 .input-group-text{
 	display: block;
@@ -15,6 +37,22 @@ ul{
     background-position: center !important;
     background-color: #fff !important;
     display: block;
+}
+.close{
+    height: 20px;
+    width: 20px;
+    background-size: contain !important;
+    background-position: center !important;
+}
+.wh-100px{
+    width: 100px !important;
+    height: 100px !important;
+}
+.bg-light-blue{
+    background: #ecf6ee;
+}
+.bg-size-13px{
+    background-size: 13px !important
 }
 input::-webkit-input-placeholder{
 	font-size: 12px;
@@ -69,12 +107,26 @@ input::-webkit-input-placeholder{
 .cursor-not-allowed{
 	cursor: not-allowed;
 }
+.ebn-input-select{
+    height: calc(1.5em + .5rem + 2px);
+    border: 1px solid #ced4da;
+    background: #fff;
+    font-size: 14px;
+    color: #232323;
+}
+.ebn-input-select:hover, .show>.btn-outline-secondary.dropdown-toggle{
+    background-color: #232323 !important;
+    border-color: #232323 !important;
+}
 /*color styles*/
 .default-text-color{
 	color: #cacccf;
 }
 .secondary-text-color{
 	color: #52575c;
+}
+.secondary-bg-color{
+    background: #52575c;
 }
 .secondary-text-gary, .ebn-dissable{
 	color: #a0a4a8;
@@ -122,7 +174,39 @@ input::-webkit-input-placeholder{
 .lock-icon{
 	background: url(../icons/lock.png) no-repeat;
 }
-
+.filter-icon{
+    background: url(../icons/Filter.png) no-repeat !important;
+}
+.add-user-icon{
+    background: url(../icons/Add-user.png) no-repeat !important;
+}
+.search-gray-icon{
+    background: url(../icons/Search-gray.png) no-repeat !important;
+}
+.edit-user-icon{
+    background: url(../icons/Edit-user.png) no-repeat;
+}
+.delete-icon{
+    background: url(../icons/delete.png) no-repeat;
+}
+.view-icon{
+    background: url(../icons/View.png) no-repeat;
+}
+.create-user-icon{
+    background: url(../icons/create-user.png) no-repeat;
+}
+.profile-pic-icon{
+    background: url(../icons/profile-pic-icon.png) no-repeat;
+}
+.success-icon{
+     background: url(../icons/successfully-created.png) no-repeat;
+}
+.delete-red-icon{
+     background: url(../icons/delete-red.png) no-repeat;
+}
+.close-icon{
+     background: url(../icons/close.png) no-repeat;
+}
 /*nav bar style starts here*/
 .nav-icon{
 	height: 50px;
@@ -380,6 +464,186 @@ input::-webkit-input-placeholder{
     background-position: right;
 }
 /*Login style ends here*/
+
+/*manage user style starts here*/
+.ebn-manage-user-container{
+    background-image: linear-gradient(#80c13f, #43ccd4);
+    border-radius: 5px;
+    box-shadow: 0 5px 5px -6px #888;
+}
+.ebn-filter{
+    box-shadow: none;
+    background-size: contain !important;
+    background-position: center !important;
+    width: 40px;
+    margin-left: 15px;
+    padding: 0;
+}
+.ebn-filter-btn{
+    background: #232323;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0px 1px #232323 !important;
+}
+.ebn-filter-btn span{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-position: center !important;
+    background-size: contain !important;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.ebn-filter-btn:hover{
+    background: #232323;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+.ebn-filter-input{
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+    background-position: right !important;
+    background-color: #fff !important;
+}
+.manage-action{
+
+}
+.manage-action li a{
+    width: 20px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    margin: 0 10px;
+    cursor: pointer;
+    display: block;
+}
+/*manage user style ends here*/
+
+/*wizard style starts here*/
+.ebn-wizard{
+    background: #fff;
+    box-shadow: 0 5px 5px -6px #888;
+    border-radius: 5px;
+}
+.wizard-container li{
+    width: 100%;
+    display: none;
+}
+.wizard-container li:nth-child(1){
+    display: block;
+}
+.ebn-wizard-main-heading{
+
+}
+.ebn-wizard-main-heading i{
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-position: center;
+    margin-right: 10px;
+}
+.ebn-wizard-main-heading h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #52575c;
+    font-size: 28px;
+}
+.ebn-wizard-steps{
+    color: #a0a4a8;
+    font-size: 22px;
+}
+.ebn-wizard-steps-active i{
+    color: #fff;
+    background-image: linear-gradient(#80c13f, #43ccd4) !important;
+}
+.ebn-wizard-steps-active label{
+    color: #52575c;
+}
+.ebn-wizard-steps i{
+    font-weight: 600;
+    font-style: normal;
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.ebn-wizard-steps label{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.ebn-wizard-sub-heading h3{
+    color: #52575c;
+    font-size: 20px;
+}
+.form-control, .custom-file-label{
+    border-color: #a0a4a8;
+}
+.form-group label{
+    color: #a0a4a8;
+    font-size: 14px;
+}
+.custom-file-label::after{
+   background: url(../icons/profile-pic.png) no-repeat #fff;
+    content: 'Upload';
+    background-size: 20px;
+    background-position: 10px;
+    width: 120px;
+    text-align: right;
+    font-size: 14px;
+    color: #a0a4a8;
+    font-weight: 500;
+}
+.ebn-wizard-footer{
+
+}
+.ebn-wizard-footer button{
+    background: #232323;
+    color: #fff;
+    border: 0;
+    padding: 5px 10px;
+    min-width: 100px;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.ebn-wizard-success{
+    text-align: center;
+}
+.ebn-wizard-success i{
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-size: contain;
+    background-position: center;
+    margin: 25px auto;
+}
+.ebn-wizard-success p{
+    color: #525752;
+    font-weight: 500;
+}
+/*wizard style ends here*/
+
+/*delete modal style starts here*/
+.delete-container i{
+    height: 50px;
+    width: 50px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto 10px;
+}
+.delete-container h3{
+    font-weight: 600;
+}
+/*delete modal style ends here*/
 
 /*main container styles ends here*/
 

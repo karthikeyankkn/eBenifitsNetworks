@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	$(".child-nav-li").click(function(e){
 		e.stopPropagation();
-	})
+	});
 
 	$(".ebn-hamburger").click(function(){
 		$(".ebn-main-container").toggleClass("w-90");
@@ -23,5 +23,13 @@ $(document).ready(function(){
 
 	$(".dahboard-tile").hover(function(){
 		$(this).children("b").toggleClass("text-light");
+	});
+
+	//wizard navigation
+	$(".wizard-next").click(function(){
+		$(this).parents("li").hide().next("li").show();
+	});
+	$(".wizard-previous").click(function(){
+		$(this).parents("li").hide().prev("li").show();
 	});
 });

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add User</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<base href = "../" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<section class="d-flex flex-row">
+		<!-- navbar -->
+		<div class="ebn-navbar-container">
+			<div class="navbar-header">
+				<img src="assets/images/logo-L.png" width="100%" alt="company-logo" class="logo-large">
+				<img src="assets/images/logo-S.png" alt="company-logo" class="logo-small display-none">
+			</div>
+			<div class="navbar-body">
+				<ul class="parent-nav-ul">
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="home-icon nav-icon"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Dashboard</label>
+							</div>
+						</div>
+					</li>
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="report-icon nav-icon"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Report</label>
+							</div>
+							<div class="d-flex flex-column ml-auto">
+								<i class="path-right-icon nav-icon"></i>
+							</div>
+						</div>
+						<!-- child nav -->
+						<ul class="child-nav-ul">
+							<li class="child-nav-li">
+								<div class="d-flex flex-row align-items-center py-3">
+									<div class="d-flex flex-column pr-3 nav-icon-toggle">
+										<i class="sales-icon nav-icon"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<label class="m-0">child-nav</label>
+									</div>
+								</div>
+							</li>
+							<li class="child-nav-li">
+								<div class="d-flex flex-row align-items-center py-3">
+									<div class="d-flex flex-column pr-3 nav-icon-toggle">
+									<i class="sales-icon nav-icon"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<label class="m-0">child-nav</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="sales-icon nav-icon"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Sales</label>
+							</div>
+							<div class="d-flex flex-column ml-auto">
+								<i class="path-right-icon nav-icon"></i>
+							</div>
+						</div>
+						<!-- child nav -->
+						<ul class="child-nav-ul">
+							<li class="child-nav-li">
+								<div class="d-flex flex-row align-items-center py-3">
+									<div class="d-flex flex-column pr-3 nav-icon-toggle">
+										<i class="sales-icon nav-icon"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<label class="m-0">child-nav</label>
+									</div>
+								</div>
+							</li>
+							<li class="child-nav-li">
+								<div class="d-flex flex-row align-items-center py-3">
+									<div class="d-flex flex-column pr-3 nav-icon-toggle">
+										<i class="sales-icon nav-icon"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<label class="m-0">child-nav</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="seller-acc-icon nav-icon bg-size-36px"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Manage Customers</label>
+							</div>
+						</div>
+					</li>
+					<li class="parent-nav-li">
+						<div class="d-flex flex-row align-items-center py-3">
+							<div class="d-flex flex-column pr-3 nav-icon-toggle">
+								<i class="products-icon nav-icon"></i>
+							</div>
+							<div class="d-flex flex-column">
+								<label class="m-0">Manage Products</label>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="copyrights">
+					<p>Copyright @ 2020 eBenifits</p>
+				</div>
+			</div>
+		</div>
+		<!-- main container -->
+		<div class="ebn-main-container">
+			<div class="main-container-header">
+				<div class="d-flex flex-row justify-content-between h-100">
+					<div class="d-flex flex-column align-self-center ebn-hamburger">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="d-flex flex-column align-self-center">
+						<div class="d-flex flex-row">
+							<div class="d-flex flex-column align-self-center mr-4">
+								<i class="fa fa-comments ebn-light-green f-22px" aria-hidden="true"></i>
+							</div>
+							<div class="d-flex position-relative align-self-center mr-4 ebn-notification">
+								<span>3</span>
+								<i class="far fa-bell ebn-light-green f-22px"></i>
+							</div>
+							<div class="d-flex justify-content-around user-tile dropdown cursor-pointer">
+								<span class="ebn-v-border mt-2"></span>
+								<label class="ml-5" data-toggle="dropdown">Karthi Keyan</label>
+								<img class="mx-3" data-toggle="dropdown" src="assets/images/kkn-img.jpg" alt="user-img">
+								<div class="dropdown-menu">
+								    <a class="dropdown-item" href="#">Link 1</a>
+								    <a class="dropdown-item" href="#">Link 2</a>
+								    <a class="dropdown-item" href="#">Link 3</a>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-container-body p-4">
+				<!-- ebn wizart starts here -->
+				<ul class="d-flex flex-row bg-light-blue p-4 wizard-container">
+					<li>
+						<div class="d-flex flex-column ebn-wizard p-4 w-100">
+							<div class="d-flex flex-row">
+								<div class="d-flex ebn-wizard-main-heading justify-content-center w-100">
+									<i class="create-user-icon"></i>
+									<h2>Create User</h2>
+								</div>
+							</div>
+							<div class="d-flex flex-row justify-content-around my-4">
+								<div class="d-flex ebn-wizard-steps ebn-wizard-steps-active">
+									<i>1</i>
+									<label>Step 1</label>
+								</div>
+								<div class="d-flex ebn-wizard-steps">
+									<i>2</i>
+									<label>Step 2</label>
+								</div>
+							</div>
+							<div class="d-flex flex-row ebn-wizard-sub-heading">
+								<h3>Basic Details</h3>
+							</div>
+							<div class="row my-4">
+								<div class="col-md-6">
+									<div class="form-group">
+									  <label for="sel1">Select list:</label>
+									  <select class="form-control" id="sel1">
+									    <option>1</option>
+									    <option>2</option>
+									    <option>3</option>
+									    <option>4</option>
+									  </select>
+									</div>
+									<div class="form-group">
+									  <label for="usr">Company Name</label>
+									  <input type="text" class="form-control" id="usr" placeholder="Company Name">
+									</div>
+									<div class="form-group">
+									  <label for="usr">Website Url</label>
+									  <input type="text" class="form-control" id="usr" placeholder="Website URL">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<label for="sel1"></label>
+									<div class="custom-file mb-3">
+									    <input type="file" class="custom-file-input" id="customFile">
+									    <label class="custom-file-label profile-pic-icon" for="customFile">Choose Company Logo</label>
+									</div>
+									<div class="form-group">
+									  <label for="usr">Email</label>
+									  <input type="email" class="form-control" id="usr" placeholder="Work Email">
+									</div>
+									<div class="form-group">
+									  <label for="usr">Phone Number</label>
+									  <input type="Number" class="form-control" id="usr" placeholder="Phone Number">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+									  <label for="comment">About Us</label>
+									  <textarea class="form-control" rows="5" id="comment" placeholder="About Us"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex flex-row ebn-wizard-footer justify-content-between">
+								<button class="wizard-next ml-auto">Next</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="d-flex flex-column ebn-wizard p-4 w-100">
+							<div class="d-flex flex-row">
+								<div class="d-flex ebn-wizard-main-heading justify-content-center w-100">
+									<i class="create-user-icon"></i>
+									<h2>Create User</h2>
+								</div>
+							</div>
+							<div class="d-flex flex-row justify-content-around my-4">
+								<div class="d-flex ebn-wizard-steps ebn-wizard-steps-active">
+									<i>1</i>
+									<label>Step 1</label>
+								</div>
+								<div class="d-flex ebn-wizard-steps ebn-wizard-steps-active">
+									<i>2</i>
+									<label>Step 2</label>
+								</div>
+							</div>
+							<div class="d-flex flex-row ebn-wizard-sub-heading">
+								<h3>Communication Information</h3>
+							</div>
+							<div class="row my-4">
+								<div class="col-md-6">
+									<div class="form-group">
+									  <label for="usr">Address Line 1</label>
+									  <input type="text" class="form-control" id="usr" placeholder="Address Line 1">
+									</div>
+									<div class="form-group">
+									  <label for="sel1">Country</label>
+									  <select class="form-control" id="sel1">
+									    <option>India</option>
+									    <option>Australia</option>
+									    <option>England</option>
+									    <option>Usa</option>
+									  </select>
+									</div>
+									<div class="form-group">
+									  <label for="sel1">City</label>
+									  <select class="form-control" id="sel1">
+									    <option>Chennai</option>
+									    <option>Bangalore</option>
+									    <option>Kerala</option>
+									    <option>Panjab</option>
+									  </select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+									  <label for="usr">Address Line 2</label>
+									  <input type="text" class="form-control" id="usr" placeholder="Address Line 2">
+									</div>
+									<div class="form-group">
+									  <label for="sel1">State / Religion</label>
+									  <select class="form-control" id="sel1">
+									    <option>1</option>
+									    <option>2</option>
+									    <option>3</option>
+									    <option>4</option>
+									  </select>
+									</div>
+									<div class="form-group">
+									  <label for="sel1">Zip / Postal</label>
+									  <select class="form-control" id="sel1">
+									    <option>1</option>
+									    <option>2</option>
+									    <option>3</option>
+									    <option>4</option>
+									  </select>
+									</div>
+								</div>
+								
+							</div>
+							<div class="d-flex flex-row ebn-wizard-footer justify-content-between">
+								<button class="wizard-previous">Previous</button>
+								<button class="wizard-submit" disabled>Submit</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="d-flex flex-column ebn-wizard p-4 w-100">
+							<div class="row">
+								<div class="col-12 ebn-wizard-success">
+									<i class="seller-acc-icon"></i>
+									<p>Seller Account was successfully created</p>
+									<p>Redirecting in <b>3</b> seconts</p>
+									<i class="success-icon wh-100px"></i>
+								</div>
+							</div>
+						</div>
+					</li>	
+				</ul>
+				<!-- ebn wizart starts here -->
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
