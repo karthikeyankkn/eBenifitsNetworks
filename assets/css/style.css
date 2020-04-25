@@ -12,6 +12,52 @@ button:disabled{
     background: #e8e8e8 !important;
     cursor: not-allowed;
 }
+.custom-radio:checked~.custom-control-label::before, .ebn-custom-checkbox:checked~.custom-control-label::before{
+    background: #232323 !important;
+    border: #232323 !important;
+}
+.custom-checkbox-label{
+    color: #cacccf;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+.max-height-1000px{
+    max-height: 1000px !important;
+}
+.text-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.text-ellipsis-line-2{
+     -webkit-line-clamp: 2;
+}
+.text-ellipsis-line-3{
+     -webkit-line-clamp: 3;
+}
+.text-ellipsis-line-4{
+     -webkit-line-clamp: 4;
+}
+.text-ellipsis-line-5{
+     -webkit-line-clamp: 5;
+}
+.w-95{
+    width: 95%;
+}
+.w-5{
+    width: 4%;
+}
+.w-15px{
+    width: 15px !important;
+}
+.f-12px{
+    font-size: 12px !important;
+}
+.h-15px{
+    height: 15px !important;
+}
 .btn{
     font-size: 14px;
     min-width: 100px;
@@ -24,6 +70,18 @@ button:disabled{
     background-color: #2ac769;
     border-color: #2ac769;
 }
+.text-success{
+    color:#2ac769 !important;
+}
+.text-danger{
+    color:#fb4e4e !important;
+}
+.custom-input-group-label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #52575c;
+    padding: 10px 0;
+}
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     border-color: #28a745;
@@ -33,10 +91,23 @@ button:disabled{
 .input-group-text{
 	display: block;
     background-size: 20px !important;
-    padding: 18px;
+    min-width: 40px;
     background-position: center !important;
     background-color: #fff !important;
     display: block;
+}
+.custom-input-link{
+    background-position: 10px !important;
+    font-size: 14px;
+    color: #a0a4a8;
+    font-weight: 500;
+    padding-top: 8px;
+}
+.small-input-group-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #a0a4a8;
+    padding-top: 8px;
 }
 .close{
     height: 20px;
@@ -67,6 +138,16 @@ input::-webkit-input-placeholder{
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+}
+.cancel-btn{
+    background: #52575c;
+    color: #fff;
+    border: 0;
+    padding: 5px 10px;
+    min-width: 100px;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 .badge{
 	font-weight: 500;
@@ -143,12 +224,13 @@ input::-webkit-input-placeholder{
 }
 .w-90{
 	width: 90% !important;
+    left: 10% !important;
 }
 .display-none{
 	display: none !important;
 }
 .bg-size-36px{
-	background-size: 36px !important;
+	background-size: 25px !important;
 }
 .home-icon{
 	background: url(../icons/Home.png) no-repeat;
@@ -207,11 +289,24 @@ input::-webkit-input-placeholder{
 .close-icon{
      background: url(../icons/close.png) no-repeat;
 }
+.plus-icon{
+     background: url(../icons/Plus.png) no-repeat;
+}
+.link-icon{
+     background: url(../icons/Link.png) no-repeat;
+}
+.upload-pdf-icon{
+     background: url(../icons/Upload-PDF.png) no-repeat;
+}
+.upload-image-icon{
+     background: url(../icons/Upload-Image.png) no-repeat;
+}
 /*nav bar style starts here*/
 .nav-icon{
-	height: 50px;
-	width: 50px;
-	background-position: center;
+	height: 25px;
+    width: 50px;
+    background-position: center;
+    background-size: contain;
 }
 .parent-nav-li{
 	cursor: pointer;
@@ -220,6 +315,7 @@ input::-webkit-input-placeholder{
 	color: #A0A4A8;
 	font-weight: 600;
 	cursor: pointer;
+    font-size: 14px;
 }
 .parent-nav-li div:hover{
 	color: #fff;
@@ -247,19 +343,22 @@ input::-webkit-input-placeholder{
 }
 /*navbar styles starts here*/
 .ebn-navbar-container{
-	width: 20%;
+	width: 15%;
 	transition: 0.2s ease;
 	background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    top: 0;
 }
 .navbar-header{
-	height: 100px;
+	height: 60px;
 	box-shadow: 0 5px 5px -6px #888;
 }
 .navbar-header img{
-    width: 150px;
+    width: 130px;
     margin: auto;
     display: block;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 .navbar-body{
 	box-shadow: 0px 5px 5px #888;
@@ -268,7 +367,10 @@ input::-webkit-input-placeholder{
     background: #fff;
 }
 .child-nav-ul{
-	display: none;
+	/*display: none;*/
+    overflow-y: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
 }
 .logo-small{
 	width: 50px !important;
@@ -281,7 +383,7 @@ input::-webkit-input-placeholder{
 }
 .ebn-hamburger i{
 	color: #43ccd4;
-	font-size: 30px;
+	font-size: 25px;
 	cursor: pointer;
 }
 .ebn-notification{
@@ -325,13 +427,18 @@ input::-webkit-input-placeholder{
 
 /*main container styles starts here*/
 .ebn-main-container{
-	width: 80%;
+	width: 85%;
+    position: absolute;
+    left: 15%;
 }
 .main-container-header{
 	background: #fff;
-	height: 100px;
-	position: relative;
+	height: 60;
+	/*position: fixed;*/
     box-shadow: 0 5px 5px -6px #888;
+    /*left: 15%;
+    right: 0;
+    z-index: 1000;*/
 }
 .main-container-body{
 	
@@ -503,7 +610,7 @@ input::-webkit-input-placeholder{
 .ebn-filter-input{
     border-top-right-radius: .25rem !important;
     border-bottom-right-radius: .25rem !important;
-    background-position: right !important;
+    background-position: 98% 7px !important;
     background-color: #fff !important;
 }
 .manage-action{
@@ -600,6 +707,17 @@ input::-webkit-input-placeholder{
     font-size: 14px;
     color: #a0a4a8;
     font-weight: 500;
+    padding-top: 8px;
+}
+.custom-file-icon-image::after{
+    background: url(../icons/Upload-Image.png) no-repeat #fff;
+    background-position: 10px 7px;
+    background-size: 16px;
+}
+.custom-file-icon-pdf::after{
+    background: url(../icons/Upload-PDF.png) no-repeat #fff;
+    background-position: 10px 7px;
+    background-size: 16px;
 }
 .ebn-wizard-footer{
 
@@ -629,6 +747,56 @@ input::-webkit-input-placeholder{
     color: #525752;
     font-weight: 500;
 }
+.ebn-custom-file{
+    text-align: center;
+    border: 1px solid #a0a4a8;
+    border-radius: 5px;
+    padding: 30px 0;
+    position: relative;
+}
+.ebn-custom-file input{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+.ebn-custom-file i{
+    display: block;
+    color: #a0a4a8;
+    font-size: 28px;
+}
+.ebn-custom-file b{
+    color: #cacccf;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 15px;
+    display: block;
+}
+.ebn-panel{
+    border: 1px solid #a0a4a8;
+    border-radius: 3px;
+}
+.ebn-panel h3{
+    padding: 10px 15px;
+    border-bottom: 1px solid #a0a4a8;
+    font-size: 14px;
+    color: #cacccf;
+}
+.ebn-panel-body{
+    padding: 15px;
+}
+.add-plan-btn{
+    font-size: 12px;
+    font-weight: 600;
+}
+.add-plan-btn i{
+    font-size: 18px;
+    vertical-align: middle;
+}
 /*wizard style ends here*/
 
 /*delete modal style starts here*/
@@ -645,14 +813,112 @@ input::-webkit-input-placeholder{
 }
 /*delete modal style ends here*/
 
+/*product card styles starts here*/
+.product-card-container{
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px -6px #888;
+}
+.product-card-container img{
+    height: 160px;
+}
+.product-card-details{
+    padding: 15px;
+}
+.product-card-details h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #232323;
+    margin-bottom: 15px;
+}
+.product-card-details p{
+    font-size: 12px;
+    color: #52575c;
+    margin-bottom: 15px;
+}
+.product-price{
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.product-primary-label{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.product-secondary-label{
+    display: block;
+    font-size: 12px;
+    color: #52575c;
+}
+.product-rating{
+    margin-top: 10px;
+}
+.product-rating i{
+    font-size: 12px;
+    color: #e8e8e8;
+}
+.product-rating-active{
+    color: #f6d946 !important;
+}
+.product-add{
+    text-align: center;
+}
+.product-add i{
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-product-edit{
+    background: #52575c;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    width: 100%;
+}
+.btn-product-delete{
+    background: #fb4e4e;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    width: 100%;
+}
+/*product card styles end here*/
 /*main container styles ends here*/
 
 
 /**********************  Media query start here *****************************************/
-@media (min-width: 100px) and (max-width: 1024px) {
+/*tab style*/
+@media (min-width: 500px) and (max-width: 1024px) {
+  .navbar-header img{
+    width: 100px;
+    padding-top: 10px;
+  }
   .nav-icon{
-  	height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 25px;
+    background-size: contain;
+  }
+  .parent-nav-li div label{
+    font-size: 12px;
+  }
+  
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  .nav-icon{
+  	height: 25px;
+    width: 50px;
     background-size: 25px
   }
   .parent-nav-li div label{
@@ -664,8 +930,12 @@ input::-webkit-input-placeholder{
   .login-container{
   	margin: auto;
   }
-  .login-banner{
+  .login-banner, .ebn-wizard-steps label, .ebn-hamburger{
   	display: none;
   }
+  .w-95{
+    width: 90%;
+  }
 }
+
 /**********************  Media query ends here *****************************************/

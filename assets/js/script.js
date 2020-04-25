@@ -2,9 +2,9 @@ $(document).ready(function(){
 
 	// navbar script
 	$(".parent-nav-li").click(function(){
-		$(this).children(".child-nav-ul").slideToggle();
+		$(this).children(".child-nav-ul").toggleClass("max-height-1000px");
 		$(this).children("div").toggleClass("parent-nav-li-active");
-		$(this).siblings().children(".child-nav-ul").slideUp();
+		$(this).siblings().children(".child-nav-ul").removeClass("max-height-1000px");
 		$(this).siblings(".parent-nav-li").children("div").removeClass("parent-nav-li-active")
 	});
 
@@ -32,4 +32,20 @@ $(document).ready(function(){
 	$(".wizard-previous").click(function(){
 		$(this).parents("li").hide().prev("li").show();
 	});
+
+	//navbar Responsive
+	function responsiveNavbar(x) {
+	  if (x.matches) { // If media query matches
+	    $(".parent-nav-li div").children(".nav-icon-toggle").toggleClass("m-auto").siblings().toggleClass("display-none");
+	    $(".logo-large").toggle();
+		$(".logo-small, .ebn-hamburger").toggleClass("display-none");
+
+	  } else {
+	   	return false;
+	  }
+	}
+
+	var x = window.matchMedia("(max-width: 700px)")
+	responsiveNavbar(x) // Call listener function at run time
+	x.addListener(responsiveNavbar) // Attach listener function on state changes
 });
